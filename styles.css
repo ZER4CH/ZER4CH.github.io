@@ -10,6 +10,7 @@ body {
 
 .container {
     text-align: center;
+    position: relative;
 }
 
 h1 {
@@ -36,7 +37,27 @@ button:hover {
 }
 
 /* Reduce size of images and videos */
-img, video {
+img {
+    width: 30%;
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Center horizontally */
+}
+
+video {
     width: 10%;
-    height: 10%;
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Center horizontally */
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1; /* Ensure video appears above other content */
+}
+
+h1,
+.buttons {
+    position: relative;
+    z-index: 600; /* Ensure other content appears above the video */
 }
