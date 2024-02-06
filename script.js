@@ -24,8 +24,17 @@ document.getElementById('noBtn').addEventListener('click', function() {
 });
 
 document.getElementById('yesBtn').addEventListener('click', function() {
-    document.getElementById('valentineImg').src = '2.png';
-    document.getElementById('valentineVideo').style.display = 'none';
-    document.getElementById('yesBtn').style.display = 'none';
-    document.getElementById('noBtn').style.display = 'none';
+    if (noClicks == 0) {
+        document.getElementById('question').textContent = "Yay! You're my Valentine! 💖";
+        document.getElementById('valentineImg').src = '2.png';
+        document.getElementById('yesBtn').style.display = 'none';
+        document.getElementById('noBtn').style.display = 'none';
+    } else {
+        document.getElementById('question').textContent = "Yay! You're my Valentine! 💖";
+        document.getElementById('valentineImg').style.display = 'block';
+        document.getElementById('valentineVideo').style.display = 'none';
+        document.getElementById('valentineImg').src = '2.png';
+        document.getElementById('noBtn').style.display = 'none';
+        document.getElementById('yesBtn').style.display = 'none';
+    }
 });
