@@ -34,3 +34,9 @@ button {
 button:hover {
     background-color: #ff6666;
 }
+
+/* Reduce size of images and videos */
+img, video {
+    width: 50%;
+    height: auto;
+}
