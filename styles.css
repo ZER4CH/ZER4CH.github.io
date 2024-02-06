@@ -37,6 +37,6 @@ button:hover {
 
 /* Reduce size of images and videos */
 img, video {
-    width: 50%;
-    height: auto;
+    width: 10%;
+    height: 10%;
 }
